@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Canvas x:Name="paperCanvas" HorizontalAlignment="Left" Height="299" Margin="173,10,0,0" VerticalAlignment="Top" Width="334" Background="#FFD39F45"/>
+        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="75" Click="startButton_Click"/>
+        <Button x:Name="stopButoon" Content="Stop" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="75" Click="stopButoon_Click"/>
+        <Button x:Name="clearButton" Content="Clear" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top" Width="75" Click="clearButton_Click"/>
+        <Slider x:Name="gapSlider" HorizontalAlignment="Left" Height="23" Margin="10,261,0,0" VerticalAlignment="Top" Width="143" ValueChanged="gapSlider_ValueChanged"/>
+        <Label x:Name="gapLabel" Content="   0" HorizontalAlignment="Left" Height="25" Margin="10,284,0,0" VerticalAlignment="Top" Width="47"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="62,289,0,0" TextWrapping="Wrap" Text="ms gap" VerticalAlignment="Top" Width="70"/>
+
     </Grid>
 </Window>
